@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.listencarefree">
 
-    <uses-permission android:name="android.permission.INTERNET" />  <!--인터넷 권한 허용-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,9 +14,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ListenCareFree"
-        tools:targetApi="31"
-        android:usesCleartextTraffic="true">   <!--인터넷 권한 허용-->
-
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".QuestActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -30,19 +32,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".GuideActivity"
+        <activity
+            android:name=".GuideActivity"
             android:label="월령별 청각 진단 가이드"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".SoundActivity"
+        <activity
+            android:name=".SoundActivity"
             android:label="실시간 소리감지"
             android:parentActivityName=".MainActivity" />
-
-        <activity android:name=".TrainActivity"
+        <activity
+            android:name=".TrainActivity"
             android:label="청능 훈련"
             android:parentActivityName=".MainActivity" />
-
+        <activity
+            android:name=".TrainEnvironmentActivity"
+            android:label="환경음 듣기"
+            android:parentActivityName=".TrainActivity" />
     </application>
 
 </manifest>

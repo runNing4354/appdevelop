@@ -21,12 +21,14 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/listencarefree_main" />
+                app:srcCompat="@drawable/listencaremain" />
 
             <ImageButton
                 android:id="@+id/imageButton11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
                 android:background="@color/white"
                 android:onClick="onSolveQuestion"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +40,9 @@
                 android:id="@+id/imageButton13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
                 android:background="@color/white"
                 android:onClick="onRealtimesound"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +54,9 @@
                 android:id="@+id/imageButton14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
                 android:background="@color/white"
                 android:onClick="onDiagnosticGuide"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,8 +71,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
-                android:text="위 애플리케이션은 2022년도 2학기 경운대학교 캡스톤 디자인 프로젝트로 리슨케어프리팀이 제작한 애플리케이션입니다."
-                android:textSize="10sp"
+                android:text="Copyright 2022. Kyounwoon University ListenCareFree Team. All rights reserved. "
+                android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />

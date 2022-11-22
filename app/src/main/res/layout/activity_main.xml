@@ -14,17 +14,14 @@
             android:layout_height="wrap_content"
             android:background="@color/white">
 
-            <TextView
-                android:id="@+id/main_title_text"
-                android:layout_width="409dp"
-                android:layout_height="67dp"
-                android:fontFamily="@font/lottemart_bold"
-                android:gravity="center"
-                android:text="리슨케어프리"
-                android:textAlignment="center"
-                android:textColor="#ff000000"
-                android:textSize="40dp"
-                tools:layout_editor_absoluteX="1dp" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/listencarefree_main" />
 
             <ImageButton
                 android:id="@+id/imageButton11"
@@ -34,8 +31,8 @@
                 android:onClick="onSolveQuestion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/main_title_text"
-                app:srcCompat="@drawable/soundscream" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@drawable/trainxml" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
@@ -46,7 +43,18 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton11"
-                app:srcCompat="@drawable/sense" />
+                app:srcCompat="@drawable/sensexml" />
+
+            <ImageButton
+                android:id="@+id/imageButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="onSolveQuestion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+                app:srcCompat="@drawable/guide_2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

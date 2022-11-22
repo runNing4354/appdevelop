@@ -6,52 +6,18 @@
     android:layout_height="match_parent"
     android:background="#B3E5FC">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_constraintStart_toStartOf="parent">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/train_title_text"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:fontFamily="@font/lottemart_bold"
-            android:gravity="center"
-            android:text="청능학습"
-            android:textAlignment="center"
-            android:textColor="#ff000000"
-            android:textSize="40dp" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/train_text_exam"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="#A5D6A7"
-            android:gravity="center"
-            android:text="소리 예제"
-            android:textAlignment="center" />
-
-        <TextView
-            android:id="@+id/train_text_feeling"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="10dp"
-            android:background="#A5D6A7"
-            android:gravity="center|center_horizontal|center_vertical"
-            android:text="감정 맞추기"
-            android:textAlignment="center" />
-
-        <TextView
-            android:id="@+id/train_text_correct"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="#A5D6A7"
-            android:gravity="center|center_horizontal|center_vertical"
-            android:text="소리 맞추기"
-            android:textAlignment="center" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

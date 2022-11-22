@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/main_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:fontFamily="@font/lottemart_bold"
+                android:gravity="center"
+                android:text="리슨케어프리"
+                android:textColor="#ff000000"
+                android:textAlignment="center"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/main_button_train"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#000000"
+                android:backgroundTint="#A9D18E"
+                android:drawableBottom="@drawable/train"
+                android:onClick="onSolveQuestion" />
+
+            <Button
+                android:id="@+id/main_button_sound"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#F4B183"
+                android:drawableBottom="@drawable/sound"
+                android:onClick="onRealtimesound" />
+
+            <Button
+                android:id="@+id/main_button_guide"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#8FAADC"
+                android:drawableBottom="@drawable/guide"
+                android:onClick="onDiagnosticGuide" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

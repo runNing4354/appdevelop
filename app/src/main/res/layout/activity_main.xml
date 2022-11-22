@@ -9,48 +9,46 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:layout_constraintStart_toStartOf="parent">
+            android:background="@color/white">
 
             <TextView
                 android:id="@+id/main_title_text"
-                android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_width="409dp"
+                android:layout_height="67dp"
                 android:fontFamily="@font/lottemart_bold"
                 android:gravity="center"
                 android:text="리슨케어프리"
-                android:textColor="#ff000000"
                 android:textAlignment="center"
-                android:textSize="40dp" />
+                android:textColor="#ff000000"
+                android:textSize="40dp"
+                tools:layout_editor_absoluteX="1dp" />
 
-            <Button
-                android:id="@+id/main_button_train"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="#000000"
-                android:backgroundTint="#A9D18E"
-                android:drawableBottom="@drawable/train"
-                android:onClick="onSolveQuestion" />
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="onSolveQuestion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_title_text"
+                app:srcCompat="@drawable/soundscream" />
 
-            <Button
-                android:id="@+id/main_button_sound"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="#F4B183"
-                android:drawableBottom="@drawable/sound"
-                android:onClick="onRealtimesound" />
+            <ImageButton
+                android:id="@+id/imageButton13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="onRealtimesound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+                app:srcCompat="@drawable/sense" />
 
-            <Button
-                android:id="@+id/main_button_guide"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="#8FAADC"
-                android:drawableBottom="@drawable/guide"
-                android:onClick="onDiagnosticGuide" />
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
